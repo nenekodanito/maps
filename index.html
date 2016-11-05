@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Mapa</title>
+    <link href="Content/bootstrap.css" rel="stylesheet"/>
+    <link href="Content/bootstrap.min.css" rel="stylesheet"/>
+   <link href="/style/estilos.css" rel="stylesheet"/>
+    <script src="/Scripts/bootstrap.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <!-- Google Maps API -->
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="ejemplo.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+</head>
+<body onload="initGeolocation();">
+    <form>
+        <div>
+            <hr />
+        </div>
+
+        <div class="container">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Total de Sistemas Acueductos</div>
+                    <div class="panel-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+                                    <div class="form-group">
+                                        <select class="form-control" id="selecMunicipio" style="background-color: aliceblue">
+                                            <option value="" selected="selected">Seleccione Municipio</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+                                    <div class="form-group">
+                                        <select class="form-control" id="selecInstituto" style="background-color: aliceblue">
+                                            <option value="" selected="selected">Seleccione Vereda</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+               <hr />
+
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <div id="map_canvas" class="form-control" style="height: 1000px;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                <!--<div style="background-color:WhiteSmoke">
+                    <hr />
+                    <h4 class="text-center">Total de Sistemas Acueductos </h4>
+                </div>-->
+                <hr />
+
+
+                <hr />
+
+
+                <!-- map div container -->
+    </form>
+</body>
+</html>
+<script src="/Scripts/ui-bootstrap-2.1.4.min.js"></script>
+<script src="/Scripts/ui-bootstrap-tpls-2.2.0.min.js"></script>
